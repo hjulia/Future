@@ -1,0 +1,24 @@
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_txt {
+        width: 44rem;
+        margin-right: 15rem;
+    }
+    &_phone {
+        background-image: url("../img/phone.png");
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50rem;
+        height: 75rem;
+    }
+    h1 {
+        margin-bottom: 3rem;
+    }
+    h2 {
+        margin-bottom: 2.5rem;
+    }
+}

@@ -1,0 +1,154 @@
+.goods {
+    box-shadow: 0px 5px 47.5px 2.5px rgba(237, 235, 253, 0.75);
+    max-width: 1380px;
+    padding: 9rem 12.4rem 11.4rem 12.4rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+
+    &.trendy {
+        margin-top: -3.5rem;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 9rem 0 8rem 0;
+    }
+    .items_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 8.5rem;
+        
+
+        @media (max-width: 900px) {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-flow: row;
+        }
+
+        .item {
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 70px;
+            position: relative;
+
+            &_header {
+                opacity: 0;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                box-sizing: border-box;
+
+            }
+            &_like {
+                background-image: url("../img/like.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 0 0;
+                padding-left: 25px;
+            }
+            &_msg {
+                background-image: url("../img/msg.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 0 0;
+                padding-left: 30px;
+            }
+            &_img {
+                width: 60%;
+                padding-top: 85%;
+                background-size: contain;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                margin-bottom: 15px;
+            }
+            &_txt {
+                color: #777;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            &_price {
+                color: #333;
+                font-size: 25px;
+                &:before {
+                    content: '$';
+                    margin-right: 7px;
+                }
+            }
+            &_button {
+                opacity: 0;
+                position: absolute;
+                bottom: -30px;
+            }
+
+            &:hover {
+                box-shadow: 0px 5px 47.5px 2.5px rgba(221, 223, 224, 0.75);
+                .item_header, .item_button {
+                    opacity: 1;
+                }
+            }
+
+            &_bag1 {
+                background-image: url("../img/bag1.png");
+            }
+            &_bag2 {
+                background-image: url("../img/bag2.png");
+            }
+            &_bag3 {
+                background-image: url("../img/bag3.png");
+            }
+            &_bag4 {
+                background-image: url("../img/bag4.png");
+            }
+            &_bag5 {
+                background-image: url("../img/bag5.png");
+            }
+            &_bag6 {
+                background-image: url("../img/bag6.png");
+            }
+
+            &_watch1 {
+                background-image: url("../img/watch1.png");
+            }
+            &_watch2 {
+                background-image: url("../img/watch2.png");
+            }
+            &_watch3 {
+                background-image: url("../img/watch3.png");
+            }
+            &_watch4 {
+                background-image: url("../img/watch4.png");
+            }
+            &_watch5 {
+                background-image: url("../img/watch5.png");
+            }
+            &_watch6 {
+                background-image: url("../img/watch6.png");
+            }
+        }
+    }
+
+    &.showcase {
+        .menu_showcase {
+            font-size: 15px;
+            display: flex;
+            justify-content: space-around;
+            padding: 2.5rem 5rem;
+            border-radius: 3.6rem;
+            box-shadow: 0px 5px 47.5px 2.5px rgba(239, 239, 240, 0.75);
+            margin-bottom: 8rem;
+              
+            li {
+                cursor: pointer;
+            }
+            .active {
+                color: #b394fa;
+                font-size: 20px;
+                text-shadow: 0px 9px 5px rgba(213, 200, 247, 0.75);
+            }              
+        }
+    }
+}
